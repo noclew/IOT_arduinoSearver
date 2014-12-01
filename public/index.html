@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>mini socket</title>   
+	<script type="text/javascript" src="jquery-1.8.2.js" ></script>
+	<script src="socket.io.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/toggleButton.css">
+</head>
+<body>
+<!-- 	<div>
+		<input type="checkbox" id="switch1" name="switch1" class="switch">
+		<label for="switch1">first switch</label>
+	</div> -->
+
+	<script src="main.js"></script>
+	<div id="central">
+		
+	</div>    
+	<div id="sidebar">
+		<form id="formSubmit">
+			<span>Name</span><br>
+			<input type="name" id="arduinoName" placeholder="your Arduino Name" value="Woongki's!" required>
+			<br>
+			<span>Your Color</span><br>
+			<input type="text" id= "arduinoColor" placeholder="hexa color code" >
+			<br>
+			<span>IP adress</span>
+			<br>
+			<input type="url" id = "ipAddress" name="yourIP" placeholder="e.g http://18.111.50.158" value="http://18.111.50.158" required>
+			<br>
+			<br>
+			AnalogPins
+			<input type="text" id="analogPins" placeholder="e.g. 1,2,5" value = '1,2,3' >
+			<br>
+			DigitalPins
+			<input type="text" id="digitalPins" placeholder="e.g. 13,4,2" value = '13,22,33' required>
+			<br>
+			<br>
+			<span>descriptions</span>
+
+			<textarea id="noteInput">note</textarea>
+			<button type="button" onclick="submitArduino()"> SubmitMe! </button>
+			<br>
+			<span>mouse position</span>
+			<br>
+			<input type="text" id="mouseCoords" readonly value="coords">
+		</form>
+	</div>
+</body>
+</html>
+
+
+
+

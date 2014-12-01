@@ -1,0 +1,129 @@
+
+/*apply to all elements of type "body" that is elements whose html tag is body*/
+body {
+  font-family: sans-serif;
+  font-weight: normal;
+  background-color: #BDBDBD;    
+  padding:0px;
+  margin: 0px;
+
+    -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+
+}
+
+.divArduinoController{
+  /*background-color: #666666;*/
+  padding: 10px;
+}
+
+/*apply to a single element whose id is "central"*/
+#central {
+  position: absolute;
+  width: 80%; 
+  height:98%;   
+  left: 15%; 
+  top: 1%;
+  background-color: #ffffff;  
+  overflow: hidden;
+  /*pointer-events:none;*/
+  cursor:default;
+}
+
+/*apply to a single element whose id is "sidebar"*/
+#sidebar {
+  position: absolute;
+  width: 14%; 
+  height:98%;   
+  left: 1%; 
+  top: 1%;
+  background-color: rgba(255,255,255,0.3);  
+  overflow: hidden;
+  cursor:default;
+}
+
+/*apply to a single element whose id is "colorInput"*/
+#colorInput {
+  position: relative;
+  width: 60%; 
+  height: auto;   
+  background-color: #ffffff;  
+  border:0;
+}
+
+/*apply to a single element whose id is "noteInput"*/
+#noteInput {
+  position: relative;
+  width: 90%; 
+  height: 150px;
+  background-color: #ffffff;  
+  border:0;
+}
+
+/*apply to a single element whose id is "mouseCoords"*/
+#mouseCoords {
+  position: relative;
+  width: 90%; 
+  height: auto;
+  background-color: transparent;  
+  border:0;
+  font-size: 18px; 
+}
+
+/*apply to all elements to which we assign the class "User"*/
+.User {
+  position: absolute;
+  cursor:pointer;
+  pointer-events:auto;
+  background-color: #ffffff; 
+  border: 0;
+  width:auto;
+  height:48px;
+
+  -webkit-transition: top 0.1s,left 0.1s, width 1s, height 1s, background-color 1s, -webkit-transform 1s;
+  transition: top 0.1s,left 0.1s, width 1s, height 1s, background-color 1s, transform 1s;
+}
+
+/*apply to all elements to which we assign the class "MyUser"*/
+.MyUser {
+
+  pointer-events:none;
+  opacity: 0.5;
+  height:auto;
+
+  /*-webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);*/
+}
+
+/*apply to all elements to which we assign the class "Bubble"*/
+.Bubble {
+  position: absolute;
+  cursor:pointer;
+  top: 20px;
+  left: 20px;
+  pointer-events:none;
+  background-color: rgba(0,0,0,0.0); 
+  opacity: 1.0;
+  border: 1px solid rgba(0,0,0,1.0);
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  width: 150px;
+}
+
+/*apply to all elements to which we assign the class "Note"*/
+.Note {
+  position: absolute;
+  cursor:pointer;
+  pointer-events:auto;
+  background-color: #ffffff; 
+  border: 0;
+
+max-width: 200px;
+  box-shadow: 10px 10px 15px #888888;
+}
